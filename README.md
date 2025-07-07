@@ -74,27 +74,28 @@ To run this project locally, follow these steps:
 
 Clone the repository and install the necessary libraries:
 
-git clone https://github.com/your-username/Parky.git \# Replace with your actual repo link  
-cd Parky  
-pip install pathway bokeh numpy pandas \--quiet
+    git clone https://github.com/your-username/Parky.git \# Replace with your actual repo link  
+    cd Parky  
+    pip install pathway bokeh numpy pandas \--quiet
 
 ### **Running the Project**
 
 The core logic and execution are within the Jupyter Notebook.
 
 1. **Open the Notebook:** Open ParkSense.ipynb (or Parky (1).ipynb if that's the primary notebook) in Google Colab.  
-2. **Run Cells:** Execute the cells sequentially. The final cell containing pw.run() will start the real-time data pipeline and update the Bokeh plots continuously.  
-   \# Example snippet from the notebook  
-   import pathway as pw  
-   from bokeh.plotting import figure, show  
-   from bokeh.io import output\_notebook
+2. **Run Cells:** Execute the cells sequentially. The final cell containing pw.run() will start the real-time data pipeline and update the Bokeh plots continuously.
 
-   \# ... (Your data loading, pricing logic, and Bokeh plot setup) ...
+       \# Example snippet from the notebook  
+        import pathway as pw  
+       from bokeh.plotting import figure, show  
+       from bokeh.io import output\_notebook
 
-   \# This triggers the real-time data stream processing and updates the Bokeh plots continuously.  
-   \# %%capture \--no-display suppresses output in the notebook interface, but the Bokeh plots will still update live.  
-   print("Starting Pathway pipeline. Plots will update below...")  
-   pw.run()
+       \# ... (Your data loading, pricing logic, and Bokeh plot setup) ...
+
+       \# This triggers the real-time data stream processing and updates the Bokeh plots continuously.  
+       \# %%capture \--no-display suppresses output in the notebook interface, but the Bokeh plots will still update live.  
+       print("Starting Pathway pipeline. Plots will update below...")  
+       pw.run()
 
 ## **📊 Dataset**
 
@@ -151,20 +152,12 @@ This project provides a robust foundation. Future enhancements could include:
 
 ## **📁 Repository Contents**
 
-.  
-├── ParkSense.ipynb           \# Main Jupyter Notebook with Pathway pipeline and Bokeh setup  
-├── Project\_Report.pdf        \# Detailed project report  
-├── README.md                 \# This README file  
-├── dataset.csv               \# The raw dataset used for simulation  
-├── parking\_data\_stream.csv   \# (Optional) Simulated real-time data stream  
-├── Plot 1.jpg                \# Visualization: Model 1 Pricing  
-├── Plot 2.jpg                \# Visualization: Model 2 Pricing  
-├── Plot 3.jpg                \# Visualization: Model 3 Pricing  
-├── Plot 1 and 2.jpg          \# Visualization: Model 1 & 2 Comparison  
-├── Plot 1 and 3.jpg          \# Visualization: Model 1 & 3 Comparison  
-├── Plot 2 and 3.jpg          \# Visualization: Model 2 & 3 Comparison  
-├── Plot All.jpg              \# Visualization: All Models Comparison  
-└── Plot None.png             \# Placeholder/additional plot image
+    .  
+    ├── ParkSense.ipynb           \# Main Jupyter Notebook with Pathway pipeline and Bokeh setup  
+    ├── Project\_Report.pdf        \# Detailed project report  
+    ├── README.md                 \# This README file  
+    ├── dataset.csv               \# The raw dataset used for simulation  
+    ├── parking\_data\_stream.csv   \# (Optional) Simulated real-time data stream  
 
 ## **🤝 Contributing**
 
