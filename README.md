@@ -82,7 +82,7 @@ Clone the repository and install the necessary libraries:
 
 The core logic and execution are within the Jupyter Notebook.
 
-1. **Open the Notebook:** Open ParkSense.ipynb (or Parky (1).ipynb if that's the primary notebook) in Google Colab.  
+1. **Open the Notebook:** Open Parky.ipynb (or Parky (1).ipynb if that's the primary notebook) in Google Colab.  
 2. **Run Cells:** Execute the cells sequentially. The final cell containing pw.run() will start the real-time data pipeline and update the Bokeh plots continuously.
 
        # Example snippet from the notebook  
@@ -153,7 +153,7 @@ This project provides a robust foundation. Future enhancements could include:
 ## **📁 Repository Contents**
 
     .  
-    ├── ParkSense.ipynb           \# Main Jupyter Notebook with Pathway pipeline and Bokeh setup  
+    ├── Parky.ipynb           \# Main Jupyter Notebook with Pathway pipeline and Bokeh setup  
     ├── Project\_Report.pdf        \# Detailed project report  
     ├── README.md                 \# This README file  
     ├── dataset.csv               \# The raw dataset used for simulation  
