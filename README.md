@@ -29,31 +29,31 @@ The goal is to create an intelligent, data-driven pricing engine for 14 urban pa
 
 The system is designed as a real-time data processing pipeline:
 
-graph TD  
-    A\[Raw Parking Data Stream\] \--\> B(Pathway Data Ingestion);  
-    B \--\> C{Feature Engineering};  
-    C \--\> D\[Dynamic Pricing Logic\];  
-    D \-- Predicted Prices \--\> E\[Real-time Price Output\];  
-    C \-- Occupancy, Queue, Traffic \--\> F\[Utilization & Demand Analysis\];  
-    E \--\> G(Bokeh Visualizations);  
-    F \--\> G;  
-    G \--\> H\[Interactive Dashboard\];
+    graph TD  
+        A\[Raw Parking Data Stream\] \--\> B(Pathway Data Ingestion);  
+        B \--\> C{Feature Engineering};  
+        C \--\> D\[Dynamic Pricing Logic\];  
+        D \-- Predicted Prices \--\> E\[Real-time Price Output\];  
+        C \-- Occupancy, Queue, Traffic \--\> F\[Utilization & Demand Analysis\];  
+        E \--\> G(Bokeh Visualizations);  
+        F \--\> G;  
+        G \--\> H\[Interactive Dashboard\];
 
-    subgraph Pricing Engine  
-        C  
-        D  
-        E  
-        F  
-    end
+        subgraph Pricing Engine  
+            C  
+            D  
+            E  
+            F  
+        end
 
-    style A fill:\#f9f,stroke:\#333,stroke-width:2px  
-    style B fill:\#bbf,stroke:\#333,stroke-width:2px  
-    style C fill:\#ccf,stroke:\#333,stroke-width:2px  
-    style D fill:\#ddf,stroke:\#333,stroke-width:2px  
-    style E fill:\#eef,stroke:\#333,stroke-width:2px  
-    style F fill:\#ffc,stroke:\#333,stroke-width:2px  
-    style G fill:\#cfc,stroke:\#333,stroke-width:2px  
-    style H fill:\#fcc,stroke:\#333,stroke-width:2px
+        style A fill:\#f9f,stroke:\#333,stroke-width:2px  
+        style B fill:\#bbf,stroke:\#333,stroke-width:2px  
+        style C fill:\#ccf,stroke:\#333,stroke-width:2px  
+        style D fill:\#ddf,stroke:\#333,stroke-width:2px  
+        style E fill:\#eef,stroke:\#333,stroke-width:2px  
+        style F fill:\#ffc,stroke:\#333,stroke-width:2px  
+        style G fill:\#cfc,stroke:\#333,stroke-width:2px  
+        style H fill:\#fcc,stroke:\#333,stroke-width:2px
 
 1. **Data Ingestion:** Raw parking data, including occupancy, queue length, and environmental factors, is ingested as a continuous stream.  
 2. **Feature Engineering:** Pathway processes this raw data, extracting and transforming features relevant for pricing decisions.  
