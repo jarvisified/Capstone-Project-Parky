@@ -85,15 +85,15 @@ The core logic and execution are within the Jupyter Notebook.
 1. **Open the Notebook:** Open ParkSense.ipynb (or Parky (1).ipynb if that's the primary notebook) in Google Colab.  
 2. **Run Cells:** Execute the cells sequentially. The final cell containing pw.run() will start the real-time data pipeline and update the Bokeh plots continuously.
 
-       \# Example snippet from the notebook  
+       # Example snippet from the notebook  
         import pathway as pw  
        from bokeh.plotting import figure, show  
        from bokeh.io import output\_notebook
 
-       \# ... (Your data loading, pricing logic, and Bokeh plot setup) ...
+       # ... (Your data loading, pricing logic, and Bokeh plot setup) ...
 
-       \# This triggers the real-time data stream processing and updates the Bokeh plots continuously.  
-       \# %%capture \--no-display suppresses output in the notebook interface, but the Bokeh plots will still update live.  
+       # This triggers the real-time data stream processing and updates the Bokeh plots continuously.  
+       # %%capture \--no-display suppresses output in the notebook interface, but the Bokeh plots will still update live.  
        print("Starting Pathway pipeline. Plots will update below...")  
        pw.run()
 
